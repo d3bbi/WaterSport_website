@@ -1,0 +1,124 @@
+<!-- Griffith College - Computing Science
+Client Side Web Development - Assignment 05
+Group Assigment
+15/04/2020 -->
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Malta_sport</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&family=Roboto&family=Exo+2:ital,wght@1,600;1,700&family=Montserrat:wght@300&family=Work+Sans:wght@500&family=Muli:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+
+
+<body>
+
+    <header class="header_index">
+        <!--The nav includes all the element that will be displayed on top of the window. This helps the user to move througout the website. The nav contains two dropdowns.-->
+        <nav id="navbar" class="navbar">
+            <ul>
+                <li><a href="index.html" data-hover="Home">Home</a></li>
+                <li><a href="surf.html">Windsurf</a></li>
+                <li><a href="dive.html">Scuba Diving</a></li>
+                <li class="dropdown" id="dropdown">Discover Malta ⯆
+                    <ul class="dropdown_content">
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="explore.html">Explore Malta</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown" id="dropdown2">About ⯆
+                    <ul class="dropdown_content">
+                        <li><a href="about.html">Our Team</a></li>
+                        <li><a href="contact.html">Contact us</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <a href="javascript:void(0);" class="icon" onclick="openNavbar()">
+                <i id="icon" class="fa fa-bars"></i>
+            </a>
+        </nav>
+
+    </header>
+    <!-- this div contains the first title that will appear in the index page -->
+    <div id="windsurf_intro" class="hide">
+        <h1>Ride the fresh breeze of Malta...</h1>
+    </div>
+    <!-- this second div contains the second title displayed on the index page -->
+    <div id="dive_intro" class="hide">
+        <h1>...and discover the wonders of the Mediterranean sea.</h1>
+    </div>
+
+    <!-- The section contains the header and the boxes that will allow the user to move to the interested section -->
+    <section class="item_container">
+        <h3>Experience Malta above and under water.</h3>
+        <div>
+            <div class="box_index">
+                <img class="image_box" src="images/windsurf_intro.png" alt="Picture of a windsurfer in Malta">
+                <div class="middle_text">
+                    <a href="surf.html">Windsurf</a>
+                </div>
+            </div>
+            <div class="box_index">
+                <img class="image_box" src="images/tartle_scuba.jpg" alt="Picture of a scuba diver with a turtle in front">
+                <div class="middle_text">
+                    <a href="dive.html">Scuba Diving</a>
+                </div>
+            </div>
+            <div class="box_index">
+                <img class="image_box" src="images/malta5.jpg" alt="Picture of the city of Malta">
+                <div class="middle_text">
+                    <a href="explore.html">Explore Malta</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--At the end I am using a footer to display authorship and copyrights information, to link the main pages and give some contact info.-->
+    <footer class="main_footer">
+        <div class="footer_name">
+            <a href="https://www.griffith.ie/">
+                <img src="https://www.griffith.ie/sites/all/themes/griffith/images/xgriffith-logo-white-trans.png.pagespeed.ic.Txm3d4VeuK.webp" alt="Griffith College logo" title="Visit griffith.ie"></a>
+        </div>
+
+        <div class="footer_links">
+            <h6>About</h6>
+            <ul>
+                <li><a href="surf.html">Windsurf</a></li>
+                <li><a href="dive.html">Scuba Diving</a></li>
+                <li><a href="explore.html">Explore</a></li>
+            </ul>
+            <a href="">Back to the top ⮥</a>
+        </div>
+
+        <div class=footer_icon>
+            <p>Stay in touch!</p>
+            <a href="" target="_blank" class="fa fa-facebook"></a>
+            <a href="" target="_blank" class="fa fa-twitter"></a>
+            <a href="" target="_blank" class="fa fa-linkedin"></a>
+            <a href="" target="_blank" class="fa fa-instagram"></a>
+            <div class="footer_email">
+                <p>Do you need more information?</p>
+                <a href="contact.html"><img src="Images/letter_email.png" alt="image of a letter">Send us an email!</a>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <p>&copy; Copyrights Deborah Rimei</p>
+        </div>
+    </footer>
+
+    <script src="jscript/script.js"></script>
+</body>
+
+</html>

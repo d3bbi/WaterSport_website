@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    <link rel="stylesheet" type="text/CSS" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&family=Roboto&family=Exo+2:ital,wght@1,600;1,700&family=Montserrat:wght@300&family=Work+Sans:wght@500&family=Muli:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Malta_Dive</title>
+</head>
+
+<!-- I attached a class to the body becuase i wanted the whole body to have a specific background -->
+
+<body class="background_dive">
+    <header class="mainhead">
+        <!--The nav includes all the element that will be displayed on top of the window. This helps the user to move througout the website. The nav contains two dropdowns.-->
+        <nav id="navbar" class="navbar">
+            <ul>
+                <li><a href="index.html" data-hover="Home">Home</a></li>
+                <li><a href="surf.html">Windsurf</a></li>
+                <li><a href="dive.html">Scuba Diving</a></li>
+                <li class="dropdown" id="dropdown">Discover Malta ⯆
+                    <ul class="dropdown_content">
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="explore.html">Explore Malta</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown" id="dropdown2">About ⯆
+                    <ul class="dropdown_content">
+                        <li><a href="about.html">Our Team</a></li>
+                        <li><a href="contact.html">Contact us</a></li>
+                        <li><a href="developers.html">Developers</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <a href="javascript:void(0);" class="icon" onclick="openNavbar()">
+                <i id="icon" class="fa fa-bars"></i>
+            </a>
+        </nav>
+
+
+        <article class="innerhead">
+            <!--I am using the div to wrap the title and the quote in a single container-->
+            <div>
+                <h1>DIVE</h1>
+                <blockquote>"Let our experience open the door to endless underwater discoveries"</blockquote>
+            </div>
+            <img src="images/diveh.png" alt="pciture of a diver">
+        </article>
+    </header>
+
+    <!-- this div contains all the information about the sport -->
+    <div class="infoSport_container">
+
+        <!-- Each article gives details about a particular spot -->
+        <article class="infoSport_head">
+            <h2>Why practice scuba diving in Malta?</h2>
+            <p>There are so many reasons why scuba diving is such a fan! Let me introduce few of them, and the rest you will discover once you try. When you are under water, you leave your day to day busy life behind.This adventure helps you forget about
+                keep calling phone cell or emergency emails that you always have to reply. Just relax and let me show you what underwater world of Malta have in offer for you.
+            </p>
+        </article>
+
+        <section class="infoSport_head">
+            <h2>The best scuba diving spots</h2>
+            <p>You can find listed below one of the best marine sites you can find in Malta.</p>
+        </section>
+
+        <article>
+            <img src="images/theBlueHole.jpg" alt="picture of the Blue Hole">
+            <div>
+                <h4>The Blue Hole</h4>
+                <p> The blue hole is great experience for everyone! For less advanced divers shallow waters down to 15 meters, are full of colorful life, you can meet there creatures as bream, moray eels, octopi, lobster, and colorful parrot-fish. For more
+                    advanced and brave diviers blue hole holds indescribable secrets on 35 meters deep. Wanna know what's there? Go and chceck!
+                </p>
+            </div>
+
+        </article>
+        <article class="reverse_section">
+            <img src="images/belheim_bomber.jpg" alt="picutre of the Blenheim Bomber Wreck">
+            <div>
+                <h4>The Blenheim Bomber wreck</h4>
+                <p>Most exclusive offer of Maltan Underwater world is definatelly The Blenheim Bomber wreck. This place have been visited by only small group of people. Why? Because for most of divier schools exact location is unknown. The Bristol Blenheim
+                    is a British light bomber aircraft. It crashed on Malta during world war II and now its a favourite meeting spot of turltles.
+                </p>
+            </div>
+        </article>
+
+        <article>
+            <img src="images/Inland-Sea-tunnel.jpg" alt="picture of the Inland Sea Tunnel">
+            <div>
+                <h4>Inland Sea tunnel</h4>
+                <p>This spot is located near the Blue Hole and is over 80 meters long tunner. This location is bit dangerous for beginners as boats are following the same way, so make sure you are always very careful! Once you enter the tunnel the light
+                    effects created by the sunlight make a good job and you feels like youwanna stay there forever, but dont stop there is much more! Next you need to use a torch to keep exploring the walls. I wont tell you everything lets leave the rest
+                    as surprise.</p>
+            </div>
+        </article>
+    </div>
+
+    <!--At the end I am using a footer to display authorship and copyrights information, to link the main pages and give some contact info.-->
+    <footer class="main_footer">
+        <div class="footer_name">
+            <a href="https://www.griffith.ie/">
+                <img src="https://www.griffith.ie/sites/all/themes/griffith/images/xgriffith-logo-white-trans.png.pagespeed.ic.Txm3d4VeuK.webp" alt="Griffith College logo" title="Visit griffith.ie"></a>
+        </div>
+
+        <div class="footer_links">
+            <h6>About</h6>
+            <ul>
+                <li><a href="surf.html">Windsurf</a></li>
+                <li><a href="dive.html">Scuba Diving</a></li>
+                <li><a href="explore.html">Explore</a></li>
+            </ul>
+            <a href="">Back to the top ⮥</a>
+        </div>
+
+        <div class=footer_icon>
+            <p>Stay in touch!</p>
+            <a href="" target="_blank" class="fa fa-facebook"></a>
+            <a href="" target="_blank" class="fa fa-twitter"></a>
+            <a href="" target="_blank" class="fa fa-linkedin"></a>
+            <a href="" target="_blank" class="fa fa-instagram"></a>
+            <div class="footer_email">
+                <p>Do you need more information?</p>
+                <a href="contact.html"><img src="Images/letter_email.png" alt="image of a letter">Send us an email!</a>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <p>&copy; Copyrights Deborah Rimei & Ireneusz Antonczenko</p>
+        </div>
+    </footer>
+    <script src="jscript/script.js"></script>
+</body>
+
+</html>

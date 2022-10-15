@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    <link rel="stylesheet" type="text/CSS" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&family=Roboto&family=Exo+2:ital,wght@1,600;1,700&family=Montserrat:wght@300&family=Work+Sans:wght@500&family=Muli:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Malta_about</title>
+</head>
+
+<body>
+    <header>
+        <!--The nav includes all the element that will be displayed on top of the window. This helps the user to move througout the website. The nav contains two dropdowns.-->
+        <nav id="navbar" class="navbar">
+            <ul>
+                <li><a href="index.html" data-hover="Home">Home</a></li>
+                <li><a href="surf.html">Windsurf</a></li>
+                <li><a href="dive.html">Scuba Diving</a></li>
+                <li class="dropdown" id="dropdown">Discover Malta ⯆
+                    <ul class="dropdown_content">
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="explore.html">Explore Malta</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown" id="dropdown2">About ⯆
+                    <ul class="dropdown_content">
+                        <li><a href="about.html">Our Team</a></li>
+                        <li><a href="contact.html">Contact us</a></li>
+                        <li><a href="developers.html">Developers</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <a href="javascript:void(0);" class="icon" onclick="openNavbar()">
+                <i id="icon" class="fa fa-bars"></i>
+            </a>
+        </nav>
+    </header>
+    <section class="about">
+        <h1>About us</h1>
+        <header class="introduction">
+            <p id="inbtn">Let us <button id="introducebtn" class="introducebtn">Introduce</button> ourselves</p>
+        </header>
+        <img id="chati" class="chat hide irekSpeak" src="images/chati.png">
+        <img id="chatd" class="chat hide debiSpeak" src="images/chatd.png">
+        <img class="irek" src="images/aboutirek.png">
+        <img class="debi" src="images/aboutdeb.png">
+        <div id="aboutdesc" class="aboutdesc hide">
+            <p>&nbsp; &nbsp; &nbsp; &nbsp; Irek and Deborah are two fresh computer science student in Griffith College. Beside sharing the same passion for programming, they are also passionate on watersports. Irek is specialised in scuba diving. He started
+                diving 4 years ago during a trip in Malesia. He always describes going under water as an adreline kick. Deborah prefer stay above the water. Her balancing skills and experience gave her power over the water.</p>
+            <h3>Why did we choose malta?
+            </h3>
+            <p>&nbsp; &nbsp; &nbsp; &nbsp; We believe Malta is a beautiful country. And not only becuase we can combine our favourite sports, windsurf and scuba diving. Malta is full of life and attractions and not only. Everyone can find something suitable
+                in this place, from exciting sport activities to quiet and relaxing spots. Another advantage of malta is weather, summer is best time if you are looking for beach and sun holiday, then winter if you want to escape from freezing moths as
+                Malta is still relatively warm.
+            </p>
+        </div>
+    </section>
+
+    <!--At the end I am using a footer to display authorship and copyrights information, to link the main pages and give some contact info.-->
+    <footer class="main_footer">
+        <div class="footer_name">
+            <a href="https://www.griffith.ie/">
+                <img src="https://www.griffith.ie/sites/all/themes/griffith/images/xgriffith-logo-white-trans.png.pagespeed.ic.Txm3d4VeuK.webp" alt="Griffith College logo" title="Visit griffith.ie"></a>
+        </div>
+
+        <div class="footer_links">
+            <h6>About</h6>
+            <ul>
+                <li><a href="surf.html">Windsurf</a></li>
+                <li><a href="dive.html">Scuba Diving</a></li>
+                <li><a href="explore.html">Explore</a></li>
+            </ul>
+            <a href="">Back to the top ⮥</a>
+        </div>
+
+        <div class=footer_icon>
+            <p>Stay in touch!</p>
+            <a href="" target="_blank" class="fa fa-facebook"></a>
+            <a href="" target="_blank" class="fa fa-twitter"></a>
+            <a href="" target="_blank" class="fa fa-linkedin"></a>
+            <a href="" target="_blank" class="fa fa-instagram"></a>
+            <div class="footer_email">
+                <p>Do you need more information?</p>
+                <a href="contact.html"><img src="Images/letter_email.png" alt="image of a letter">Send us an email!</a>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <p>&copy; Copyrights Deborah Rimei & Ireneusz Antonczenko</p>
+        </div>
+    </footer>
+    <script src="jscript/script.js" type="text/javascript"></script>
+</body>
+
+</html>

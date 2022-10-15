@@ -1,0 +1,127 @@
+<!--
+Griffith College - Computing Science
+Client Side Web Development - Assignment 05
+
+15/03/2020
+-->
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Malta_explore</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&family=Roboto&family=Exo+2:ital,wght@1,600;1,700&family=Montserrat:wght@300&family=Work+Sans:wght@500&family=Muli:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+
+<!-- I gave a class to the body becuase i wanted to place a specific background for this page -->
+
+<body class="body_explore_malta">
+    <div class="explore_malta_page">
+        <header id="explore_malta">
+
+            <!--The nav includes all the element that will be displayed on top of the window. This helps the user to move througout the website. The nav contains two dropdowns.-->
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a href="index.html" data-hover="Home">Home</a></li>
+                    <li><a href="surf.html">Windsurf</a></li>
+                    <li><a href="dive.html">Scuba Diving</a></li>
+                    <li class="dropdown" id="dropdown">Discover Malta ⯆
+                        <ul class="dropdown_content">
+                            <li><a href="gallery.html">Gallery</a></li>
+                            <li><a href="explore.html">Explore Malta</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown" id="dropdown2">About ⯆
+                        <ul class="dropdown_content">
+                            <li><a href="about.html">Our Team</a></li>
+                            <li><a href="contact.html">Contact us</a></li>
+                            <li><a href="developers.html">Developers</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <a href="javascript:void(0);" class="icon" onclick="openNavbar()">
+                    <i id="icon" class="fa fa-bars"></i>
+                </a>
+            </nav>
+            <!-- This section is still inside the header and display the video with an header that will be placed on top of it -->
+            <section id="explore_header">
+                <h1>Discover Malta</h1>
+                <video class="video_malta" autoplay loop muted><source src="images/malta_30.mp4" title="https://www.telegraph.co.uk/travel/why-choose-malta/"></video>
+            </section>
+        </header>
+        <!-- This section contain information about Malta -->
+        <section class="explore_paragraph">
+            <h2>Why visit Malta?</h2>
+            <p>With over 300 days of sunshine, Malta is the ultimate year-round holiday destination. Malta is not only windsurfing and scuba diving, if you are looking for fun night out, beautiful vistas with historical and cultural values, then this is
+                the place to be. Malta has a plethora of things to offer from the sea to the nightlife, neighbouring Islands and everything in between.
+            </p>
+
+            <h2>Weather</h2>
+            <p>Malta boasts over 300 days of sunshine yearly, so the chances are that if you organise a trip to Malta, the sun will surely be your best companion. The weather in Malta is ideal for anyone looking to brighten their vacation with some island
+                weather. Whether you’re visiting Malta during summer, when the beaches glisten, or during the colder months, the weather is favourable for walks through Malta’s most appealing landscapes with warmer temperatures and enough hours of sunshine
+                for anyone to enjoy.
+            </p>
+            <img src="images/blue-lagoon.jpg" alt="picture of Blue Lagoon, Comino" title="Blue Lagoon">
+            <h2>The most beautiful beaches</h2>
+            <p>Malta’s best-selling characteristic is by far its beautiful crystalline waters. If you’re planning to spend a summer in Malta, you have got to take a tour of what we believe are the best beaches in Malta.</p>
+            <h4>North</h4>
+            <p>Towards the North of Malta beaches are more child-friendly and most of them are fully equipped with sunbeds and umbrella rentals, bathrooms, as well as water sports rental facilities. Amongst the most popular you can find Golden Bay and Għajn
+                Tuffieha Bay (her e you can enjoy one of Malta's most beautiful and romantic sunsets).</p>
+            <h4>South</h4>
+            <p>Towards the south of Malta, Delimara and St. Peter’s Pool are the most frequented bays, even though they’re not that easy to get to. You’ll also find great central spots for a dip around Sliema and St Julians - long stretches of rocky beach
+                with lidos and restaurants popping up along the promenade with some shade or a bite to eat. </p>
+            <img src="images/nightlife.jpg" alt="picture of the Nightlife in Malta" title="Nigtlife">
+            <h2>Nightlife</h2>
+            <p>The nightlife in Malta is one of the main attractions for people who are looking to party and enjoy a good drink with friends. Paceville offers a selection of bars and clubs all condensed into one area, so whenever you are bored from a place
+                or just wish to move to a different bar you can easily get up and go to another. Besides Paceville, Malta also has a beautiful selection on bars and lounges in Bugibba so wherever you are on the Island you can always spend your evening
+                around these areas.</p>
+        </section>
+
+
+        <!--At the end I am using a footer to display authorship and copyrights information, to link the main pages and give some contact info.-->
+        <footer class="main_footer">
+            <div class="footer_name">
+                <a href="https://www.griffith.ie/">
+                    <img src="https://www.griffith.ie/sites/all/themes/griffith/images/xgriffith-logo-white-trans.png.pagespeed.ic.Txm3d4VeuK.webp" alt="Griffith College logo" title="Visit griffith.ie"></a>
+            </div>
+
+            <div class="footer_links">
+                <h6>About</h6>
+                <ul>
+                    <li><a href="surf.html">Windsurf</a></li>
+                    <li><a href="dive.html">Scuba Diving</a></li>
+                    <li><a href="explore.html">Explore</a></li>
+                </ul>
+                <a href="">Back to the top ⮥</a>
+            </div>
+
+            <div class=footer_icon>
+                <p>Stay in touch!</p>
+                <a href="" target="_blank" class="fa fa-facebook"></a>
+                <a href="" target="_blank" class="fa fa-twitter"></a>
+                <a href="" target="_blank" class="fa fa-linkedin"></a>
+                <a href="" target="_blank" class="fa fa-instagram"></a>
+                <div class="footer_email">
+                    <p>Do you need more information?</p>
+                    <a href="contact.html"><img src="Images/letter_email.png" alt="image of a letter">Send us an email!</a>
+                </div>
+            </div>
+            <div class="footer_bottom">
+                <p>&copy; Copyrights Deborah Rimei & Ireneusz Antonczenko</p>
+            </div>
+        </footer>
+    </div>
+    <script src="jscript/script.js"></script>
+</body>
+
+</html>

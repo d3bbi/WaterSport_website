@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    <link rel="stylesheet" type="text/CSS" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&family=Roboto&family=Exo+2:ital,wght@1,600;1,700&family=Montserrat:wght@300&family=Work+Sans:wght@500&family=Muli:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Malta_Surf</title>
+</head>
+
+<!-- I attached a class to the body becuase i want to have a specific background (set in css) for the whole body -->
+
+<body class="background_surf">
+    <header class="mainhead">
+        <!--The nav includes all the element that will be displayed on top of the window. This helps the user to move througout the website. The nav contains two dropdowns.-->
+        <nav id="navbar" class="navbar">
+            <ul>
+                <li><a href="index.html" data-hover="Home">Home</a></li>
+                <li><a href="surf.html">Windsurf</a></li>
+                <li><a href="dive.html">Scuba Diving</a></li>
+                <li class="dropdown" id="dropdown">Discover Malta ⯆
+                    <ul class="dropdown_content">
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="explore.html">Explore Malta</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown" id="dropdown2">About ⯆
+                    <ul class="dropdown_content">
+                        <li><a href="about.html">Our Team</a></li>
+                        <li><a href="contact.html">Contact us</a></li>
+                        <li><a href="developers.html">Developers</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <a href="javascript:void(0);" class="icon" onclick="openNavbar()">
+                <i id="icon" class="fa fa-bars"></i>
+            </a>
+        </nav>
+
+        <!-- this article contains the name of the sport and a quote -->
+        <article class="innerhead">
+            <div>
+                <h1>WINDSURF</h1>
+                <!-- I am using blockquote to contain the quote -->
+                <blockquote>
+                    "I can't change the direction of the wind, but I can adjust my sails to always reach my destination."<span>Jimmy Dean</span>
+                </blockquote>
+            </div>
+            <img src="images/wind_intro.jpg" alt="picture of a windsurfer">
+        </article>
+    </header>
+
+    <!-- the div contains information about the sport -->
+    <div class="infoSport_container">
+
+        <article class="infoSport_head">
+            <h2>Why practice windsurf in Malta?</h2>
+            <p>Malta is the ideal place for windsurfing due to the warm waters and the easy accessibility of windsurfing spots. Windsurfing is a form of sailing, whereby you stand on a board attached to a sail and you move across the water, through the force
+                of the wind. On the other hand surfing depends on the waves, whereby you stand on a surfing board and ride the waves. The best time to go windsurfing in Malta is between November and March, when the wind conditions are the best.
+            </p>
+        </article>
+
+        <section class="infoSport_head">
+            <h2>The best windsurf spots</h2>
+            <p>Malta has numerous spots where you can practice windsurf.</p>
+        </section>
+
+        <!-- Each article describe a specific spot with images-->
+        <article>
+            <img src="images/MelliehaBay.jpg" alt="picture of Mellieha Bay" title="Mellieh Bay, Malta">
+            <div>
+                <h4>Mellieha bay</h4>
+                <p>Mellieħa Bay is Malta’s largest and most popular beach located in the North of the main island. Many windsurfers, from beginners to advance are populating these bay from May to October. The bay is really well organised for this sport as
+                    it offers the largest variety of windsurfing conditions with flat waters that are perfect for speed blasting and slalom. Many windsurf rental are located in this area.
+                </p>
+            </div>
+        </article>
+
+        <article class="reverse_section">
+            <img src="images/ghallisrocks.jpg" alt="picture of Ghallis Rocks" title="Ghallis Rocks, Malta">
+            <div>
+                <h4>Ghallis Rocks</h4>
+                <p>Ghallis Rock is the most popular wave windsurfing spot in Malta when the wind is from West/NortWest/North. Ghallis Rock is situated along the coast road which connects Sliema with the north of the island. The spot is is usually pretty
+                    safe however the foreshore is rocky and beginner must be cautious in the shore-break. Intermediate wind surfers can surf the break off the point formed by the rock while more experienced surfers can sail the windward side of the rock.
+                </p>
+            </div>
+        </article>
+        <article>
+            <img src="images/StThomasBay.jpg" alt="picture of St Thomas Bay" title="St. Thomas Bay, Malta">
+            <div>
+                <h4>St Thomas Bay</h4>
+                <p>St Thomas Bay is a large bay partly covered with white sand near the village of Marsaskala, in the south of Malta. Called ‘Ir-Ramia’ by locals, this natural inlet is a lovely seaside haven popular with Maltese families, yet it remains
+                    fairly undiscovered by tourists. White limestone cliffs and rows of beach houses used by locals during the summer season surround this quiet bay that is knows for windsurfing activities.</p>
+            </div>
+        </article>
+
+        <!-- Thsi section describe the best school of windsurf in Malta-->
+        <section class="infoSport_head">
+            <h2>Best school of Windsurf</h2>
+            <p>You are a beginner but want to try windsurf? Do not worry! In Malta you can find surf schools that will provide all the equipments and will teach how to start it.</p>
+        </section>
+
+        <div class="infoSchool">
+            <a href="https://surfingmalta.com/" target="_blank"><img src="images/surfingMalta.logo.png" class="school_logo" alt="logo school SurfingMalta.com" title="check SurfingMalta offers"></a>
+            <p>Surfing Malta is a windsurfing school run by family for over ten years now. This is the reason that they are specialised in beginners. Also they have developed a unique teaching method that allow all the people to learn windsurfing quick and
+                easy! But also for advanced they can offer much challenge. Their equipment is carefully chosen to cater for beginners and also to cater for the more experienced. Surfing Malta offers the possibility to windsurf in all of Malta’s best locations.
+            </p>
+
+            <p>📌Garaxx 4, Saint Joseph Flats, Carmeo Dimech Street, Mosta, Malta.</p>
+        </div>
+        <div class="infoSchool">
+            <a href="http://www.hangloosemalta.com/" target="_blank"><img src="images/hanglooseLogo.png" class="school_logo" alt="logo surf school hangleoosemalta.com" title="check Hangleoose offers"></a>
+            <p>Hangloose – Surf’n’Sail has been under new management since 2014, and is possibly the first windsurfing school set up in Malta. It is situated on the Mellieha Bay Hotel private beach just a few meters away from the busy Ghadira Bay. Their
+                start windsurfing package gives beginners or with little experience, an in depth introduction to windsurfing. With the use of beginner boards, their experienced instructors will teach you all the basic windsurfing techniques. At the end
+                of the course you will be able to windsurf in light winds to a chosen point and return to where you started. If you have reached a certain level, the you will receive a certificate and would be able to rent windsurfing equipment.
+            </p>
+
+            <p>📌Mellieha Bay Hotel, Waters Edge Triq il-Marfa, Ghadira Mellieha</p>
+        </div>
+    </div>
+
+    <!--At the end I am using a footer to display authorship and copyrights information, to link the main pages and give some contact info.-->
+    <footer class="main_footer">
+        <div class="footer_name">
+            <a href="https://www.griffith.ie/">
+                <img src="https://www.griffith.ie/sites/all/themes/griffith/images/xgriffith-logo-white-trans.png.pagespeed.ic.Txm3d4VeuK.webp" alt="Griffith College logo" title="Visit griffith.ie"></a>
+        </div>
+
+        <div class="footer_links">
+            <h6>About</h6>
+            <ul>
+                <li><a href="surf.html">Windsurf</a></li>
+                <li><a href="dive.html">Scuba Diving</a></li>
+                <li><a href="explore.html">Explore</a></li>
+            </ul>
+            <a href="">Back to the top ⮥</a>
+        </div>
+
+        <div class=footer_icon>
+            <p>Stay in touch!</p>
+            <a href="" target="_blank" class="fa fa-facebook"></a>
+            <a href="" target="_blank" class="fa fa-twitter"></a>
+            <a href="" target="_blank" class="fa fa-linkedin"></a>
+            <a href="" target="_blank" class="fa fa-instagram"></a>
+            <div class="footer_email">
+                <p>Do you need more information?</p>
+                <a href="contact.html"><img src="Images/letter_email.png" alt="image of a letter">Send us an email!</a>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <p>&copy; Copyrights Deborah Rimei & Ireneusz Antonczenko</p>
+        </div>
+    </footer>
+    <script src="jscript/script.js"></script>
+</body>
+
+</html>
